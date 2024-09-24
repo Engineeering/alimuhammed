@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Products - Engineering & Design Platform</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about-contact-faq.html">About Us</a></li>
+                <li><a href="auth.html">Sign In / Sign Up</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-filter">
+            <h2>Filter Products</h2>
+            <form id="filter-form">
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="all">All</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="interior-design">Interior Design</option>
+                    <option value="exterior-design">Exterior Design</option>
+                </select>
+                <button type="submit" class="btn">Apply Filters</button>
+            </form>
+        </section>
+
+        <section class="product-listing">
+            <h2>Available Products</h2>
+            <div class="product-grid">
+                <!-- Example product card -->
+                <div class="product-card">
+                    <img src="path/to/image.jpg" alt="Product Name">
+                    <h3>Product Name</h3>
+                    <p>$Price</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Add more product cards as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Engineering & Design Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="product.js"></script>
+</body>
+</html>

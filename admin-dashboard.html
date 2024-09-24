@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin Dashboard - Engineering & Design Platform</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="auth.html">Sign In / Sign Up</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="about-contact-faq.html">About Us</a></li>
+                <li><a href="user-account.html">User Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="admin-dashboard">
+            <h2>Admin Dashboard</h2>
+            <div class="admin-controls">
+                <h3>Manage Products</h3>
+                <button class="btn" id="add-product">Add New Product</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product ID</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Engineering Tool</td>
+                            <td>$49.99</td>
+                            <td>
+                                <button class="btn">Edit</button>
+                                <button class="btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Interior Design Kit</td>
+                            <td>$99.99</td>
+                            <td>
+                                <button class="btn">Edit</button>
+                                <button class="btn">Delete</button>
+                            </td>
+                        </tr>
+                        <!-- Add more products dynamically -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="order-management">
+                <h3>Manage Orders</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>User</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1001</td>
+                            <td>User1</td>
+                            <td>$149.98</td>
+                            <td>Shipped</td>
+                        </tr>
+                        <tr>
+                            <td>#1002</td>
+                            <td>User2</td>
+                            <td>$89.99</td>
+                            <td>Delivered</td>
+                        </tr>
+                        <!-- Add more orders dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Engineering & Design Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
